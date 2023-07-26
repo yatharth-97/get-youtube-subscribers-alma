@@ -4,7 +4,7 @@ The project involves us to construct a API to obtain YouTube Subscribers data fo
 
 According to the guidelines given for the CapStone project, we must develop a backend API that will deliver responses in JSON format, utilizing a modular coding strategy that uses separate files for each api connection, a separate file to handle the database, and an app for all routes.
 
-##### All of the routes use Get http methods.
+#### All of the routes use Get http methods.
 
 - **/subscribers** will return a list(array) of subscribers.
 - **/subscribers/names** - An array of subscribers is returned in the response having only two values name and subscribedChannel.
