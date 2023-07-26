@@ -2,7 +2,7 @@
 
 The project involves us to construct a API to obtain YouTube Subscribers data for a Mongodb database.
 
-According to the guidelines given for the CapStone project, we must develop a backend API that will deliver responses in JSON format, utilizing a modular coding strategy that uses separate files for each api connection, a separate file to handle the database and an app for all routes.
+According to the guidelines given for the CapStone project, we must develop a backend API that will deliver responses in JSON format, utilizing a modular coding that uses separate files for each api connection, a separate file to handle the database and an app for all routes.
 
 #### All of the routes use Get http methods.
 
