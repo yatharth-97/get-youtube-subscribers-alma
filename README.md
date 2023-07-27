@@ -9,7 +9,7 @@ According to the guidelines given for the CapStone project, we must develop a ba
 - **/subscribers** will return a list(array) of subscribers.
 - **/subscribers/names** - An array of subscribers is returned in the response having only two values name and subscribedChannel.
 - **/subscribers/:id** - return the subscriber with the matching ID that is provided.
-- _if the id does not match give an Modified error message along with the statusCode_
+- _if the id does not match give modified error message along with the statusCode_
 
 ## Reflection 💠
 
