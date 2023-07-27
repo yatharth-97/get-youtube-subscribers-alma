@@ -4,10 +4,10 @@ The project involves us to construct a API to obtain YouTube Subscribers data fo
 
 According to the guidelines given for the CapStone project, we must develop a backend API that will deliver responses in JSON format, utilizing modular coding that uses separate files for each api connection, a separate file to handle the database and an app for all routes.
 
-- **/subscribers** will return a list(array) of subscribers using get http method.
-- **/subscribers/names** - An array of subscribers is returned in the response having only two values name and subscribedChannel (also uses get http method).
-- **/subscribers/:id** - On using get http method it will return the subscriber with the matching ID that is provided( _if the id does not match give modified error message along with the statusCode_)
-- using **post** method we can add new subscriber's name and their subscribedChannel info by adding the **header** as _Content-Type: application/json_.
+- **/subscribers** : will return whole array of objects from our database which gives us subscribers using get http method.
+- **/subscribers/names** : subscribers' names is returned in the response having only two values name and subscribedChannel (also uses get http method).
+- **/subscribers/:id** : On using get http method it will return the subscriber with the matching ID that is provided( _if the id does not match give modified error message along with the statusCode_)
+- **/subscribers** : using **post** method we can add new subscriber's name and their subscribedChannel info by adding the **header** as _Content-Type: application/json_.
 
 ## Reflection 💠
 

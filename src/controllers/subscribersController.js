@@ -68,7 +68,7 @@ const patchSubscribers = async (req, res) => {
 const deleteSubscribers = async (req, res) => {
   try {
     await res.subscriber.deleteOne();
-    res.json({ message: 'Subscriber DELETED' });
+    res.json({ message: 'SUBSCRIBER DELETED' });
   } catch (err) {
     res.status(500).json({ message: err.message });
   }
