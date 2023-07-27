@@ -14,11 +14,9 @@ app.use('/', subscribersRoute);
 
 // Main Route
 app.get('/', (req, res) => {
-  res
-    .status(200)
-    .send(
-      'Hey this is a REST API by Yatharth for getting info of Youtube Subscribers'
-    );
+  res.status(200).json({
+    msg: 'Hey this is a REST API by Yatharth Shahrawat for getting info of Youtube Subscribers',
+  });
 });
 
 module.exports = app;
