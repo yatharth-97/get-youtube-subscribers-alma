@@ -1,8 +1,10 @@
 # Get Youtube Subscribers API
 
-The project involves us to construct a API to obtain YouTube Subscribers data for a Mongodb database.
+The project involves us to construct a RESTful API to obtain YouTube Subscribers data for a Mongodb database.
 
 According to the guidelines given for the CapStone project, we must develop a backend API that will deliver responses in JSON format, utilizing modular coding that uses separate files for each api connection, a separate file to handle the database and an app for all routes.
+
+I have added some custom middlewares that will help us in catching common errors and avoiding try-catch blocks for our controllers.
 
 - **/subscribers** : will return whole array of objects from our database which gives us subscribers using get http method.
 - **/subscribers/names** : subscribers' names is returned in the response having only two values name and subscribedChannel (also uses get http method).
