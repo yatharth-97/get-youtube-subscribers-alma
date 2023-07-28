@@ -12,9 +12,9 @@ I have added some custom middlewares that will help us in catching common errors
 
 ## Reflection 💠
 
-- This project was built during my third module of Backend Development at AlmaBetter. Project goals included using technologies learned up until this point and familiarizing myself with documentation for new express and mongoose.
+- This project was built during my third module of Backend Development at AlmaBetter. Project goals included using technologies learned up until this point and familiarizing myself with documentation of express and mongoose.
 
-- I wanted to use Netlify functions for deployment but was facing many issues with serverless functions due to the particular folder setup and root path. So I went with Vercel platform as it didn't required many configuration and was easy to setup environment variables.
+- I wanted to use Netlify functions for deployment but was facing many issues with serverless functions due to the particular folder setup and root path. So I went with Vercel platform as it didn't required many configuration and was easy to setup my environment variables.
 
 ## Built with
 
