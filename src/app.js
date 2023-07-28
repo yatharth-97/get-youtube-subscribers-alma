@@ -9,14 +9,6 @@ const errorHandlerMiddleware = require('./middleware/error-handler');
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-const subscribersRoute = require('./routes/subscribersRoute');
-
-// Middleware route
-app.use('/', subscribersRoute);
-// custom middleware
-app.use(notFound);
-app.use(errorHandlerMiddleware);
-
 // Main Route
 app.get('/', (req, res) => {
   res
@@ -25,5 +17,13 @@ app.get('/', (req, res) => {
       'Hey this is a REST API by Yatharth Shahrawat for getting info of Youtube Subscribers'
     );
 });
+
+const subscribersRoute = require('./routes/subscribersRoute');
+
+// Middleware route
+app.use('/', subscribersRoute);
+// custom middleware
+app.use(notFound);
+app.use(errorHandlerMiddleware);
 
 module.exports = app;
