@@ -12,7 +12,7 @@ According to the guidelines given for the CapStone project, we must develop a ba
 
 - This project was built during my third module of Backend Development at AlmaBetter. Project goals included using technologies learned up until this point and familiarizing myself with documentation for new features.
 
-- I wanted to use Netlify functions for deployment but was facing many issues with serverless functions due to the particular folder setup and root path. That's why I went with Vercel platform as it didn't required many configuration.
+- I wanted to use Netlify functions for deployment but was facing many issues with serverless functions due to the particular folder setup and root path. So I went with Vercel platform as it didn't required many configuration and was easy to setup environment variables.
 
 ## Built with
 
