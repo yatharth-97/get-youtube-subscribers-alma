@@ -13,9 +13,9 @@ app.use(express.urlencoded({ extended: false }));
 app.get('/', (req, res) => {
   res
     .status(200)
-    .send(
-      'Hey this is a REST API by Yatharth Shahrawat for getting info of Youtube Subscribers'
-    );
+    .json({
+      msg: 'Hey this is a REST API by Yatharth Shahrawat for getting info of Youtube Subscribers',
+    });
 });
 
 const subscribersRoute = require('./routes/subscribersRoute');
