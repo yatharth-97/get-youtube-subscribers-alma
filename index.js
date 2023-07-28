@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require('express');
 const app = require('./src/app');
 const mongoose = require('mongoose');
@@ -8,8 +10,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 // Connect to DATABASE
-const DATABASE_URL =
-  'mongodb+srv://yatharthshahrawat97:HTWHMq5mj1tbEd9P@nodeexpressprojects.6n4kl6k.mongodb.net/?retryWrites=true&w=majority';
+const DATABASE_URL = process.env.DATABASE_URI;
 //* used mongoDB driver
 mongoose.connect(DATABASE_URL, {
   useNewUrlParser: true,
