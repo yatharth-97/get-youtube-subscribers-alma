@@ -6,11 +6,11 @@ According to the guidelines given for the CapStone project, we must develop a ba
 
 - **/subscribers** : will return whole array of objects from our database which gives us subscribers using get http method.
 - **/subscribers/names** : subscribers' names is returned in the response having only two values name and subscribedChannel (also uses get http method).
-- **/subscribers/:id** : On using get http method it will return the subscriber with the matching ID that is provided( _if the id does not match give modified error message along with the statusCode_)
+- **/subscribers/:id** : On using get http method it will return the subscriber with the matching ID that is provided( _if the id does not match, it gives a modified error message along with the statusCode_)
 
 ## Reflection 💠
 
-- This project was built during my third module of Backend Development at AlmaBetter. Project goals included using technologies learned up until this point and familiarizing myself with documentation for new features.
+- This project was built during my third module of Backend Development at AlmaBetter. Project goals included using technologies learned up until this point and familiarizing myself with documentation for new express and mongoose.
 
 - I wanted to use Netlify functions for deployment but was facing many issues with serverless functions due to the particular folder setup and root path. So I went with Vercel platform as it didn't required many configuration and was easy to setup environment variables.
 

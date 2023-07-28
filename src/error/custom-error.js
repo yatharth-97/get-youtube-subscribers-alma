@@ -1,3 +1,5 @@
+// this custom api class will help us in throwing different errors along
+// with their statuscodes when used.
 class CustomAPIError extends Error {
   constructor(message, statusCode) {
     super(message);
