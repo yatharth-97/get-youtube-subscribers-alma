@@ -21,14 +21,7 @@ const getSubscribersNames = async (req, res) => {
 // gets subscriber by id  and subcribedChannel
 // if not found a message will be send
 const getSubscribersByID = async (req, res) => {
-  const { id: subscriberID } = req.params;
-  const subscriber = await Subscriber.findOne({ _id: subscriberID });
-  if (!subscriber) {
-    return res
-      .status(404)
-      .json({ msg: `No subscriber with id: ${subscriberID} is found` });
-  }
-  res.status(200).json({ subscriber });
+  //
 };
 
 module.exports = {
