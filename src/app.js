@@ -19,7 +19,6 @@ app.get('/', (req, res) => {
 });
 
 const subscribersRoute = require('./routes/subscribersRoute');
-
 // Middleware route
 app.use('/', subscribersRoute);
 // custom middleware
