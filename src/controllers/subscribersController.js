@@ -29,14 +29,14 @@ const getSubscribersNames = asyncWrapper(async (req, res) => {
 // if not found a message will be send
 const getSubscribersByID = asyncWrapper(async (req, res, next) => {
   // by Destructuring req.params.id
-  const { id: taskID } = req.params;
-  const task = await Subscriber.findOne({ _id: taskID });
-  // if the task is not present it will go to the next operation which is a middleware functionality
-  // and will go to createCustomErro which will give us an error message with status code.
-  if (!task) {
-    return next(createCustomError(`No task with id : ${taskID}`, 404));
+  const { id: subscriberID } = req.params;
+  const subscriber = await Subscriber.findOne({ _id: subscriberID });
+  // if the subscriber is not present it will go to the next operation which is a middleware functionality
+  // and will go to createCustomError which will give us an error message with status code.
+  if (!subscriber) {
+    return next(createCustomError(`No task with id : ${subscriberID}`, 404));
   }
-  res.status(200).json({ task });
+  res.status(200).json({ subscriber });
 });
 
 module.exports = {
