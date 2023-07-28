@@ -5,7 +5,7 @@ const subscriberModel = require('./models/subscribers');
 const data = require('./data');
 
 // Connect to DATABASE
-const DATABASE_URL = process.env.DATABASE_URI;
+const DATABASE_URL = `mongodb+srv://yatharthshahrawat97:${process.env.PASS}@nodeexpressprojects.6n4kl6k.mongodb.net/?retryWrites=true&w=majority`;
 //* used mongoDB driver
 mongoose.connect(DATABASE_URL, {
   useNewUrlParser: true,
